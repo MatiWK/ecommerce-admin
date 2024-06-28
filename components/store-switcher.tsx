@@ -43,15 +43,15 @@ const onStoreSelect = (store: { value: string, label: string}) => {
 }
 
 // GETS RID OF HYDRATION ERROR. WEBSITE WORKS WITHOUT IT BUT IT HAS THIS ANOYING ERROR, WELL ALSO I DONT REALLY KNOW WHY IT GETS RID OF IT LMAO
-// const [isMounted, setIsMounted] = useState(false)
+const [isMounted, setIsMounted] = useState(false)
 
-//     useEffect(() => {
-//         setIsMounted(true)
-//     }, [])
+    useEffect(() => {
+        setIsMounted(true)
+    }, [])
 
-//     if(!isMounted) {
-//         return null;
-//     }
+    if(!isMounted) {
+        return null;
+    }
 
 
     return (

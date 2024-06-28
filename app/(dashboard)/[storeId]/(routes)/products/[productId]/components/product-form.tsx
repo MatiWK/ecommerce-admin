@@ -139,6 +139,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({
                           disabled={loading}
                           onChange={(url) => field.onChange([...field.value, { url }])}
                           onRemove={(url) => field.onChange([...field.value.filter((current) => current.url !== url)])}
+                          
                           />
                       </FormControl>
                       <FormMessage />
